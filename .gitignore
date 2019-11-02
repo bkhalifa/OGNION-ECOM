@@ -1,0 +1,19 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/OGNION-ECOM-DEMO/.vs/OGNION-ECOM-DEMO/v16
+/OGNION-ECOM-DEMO/Api/bin/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/.vs/OGNION-ECOM-DEMO/config
+/OGNION-ECOM-DEMO/Api/obj/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/Api/obj
+/OGNION-ECOM-DEMO/ECOM.Poco/bin/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Poco/obj/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Poco/obj
+/OGNION-ECOM-DEMO/ECOM.Repos/obj
+/OGNION-ECOM-DEMO/ECOM.Service/bin/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Service/obj/Debug/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Service/obj
+/OGNION-ECOM-DEMO/ECOM.Repos/bin/Debug/netcoreapp2.2
+/.vs
+/OGNION-ECOM-DEMO/.vs/OGNION-ECOM-DEMO/DesignTimeBuild
