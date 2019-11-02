@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [JHSW500B\Joe Stagner]
+    AUTHORIZATION [dbo];
+

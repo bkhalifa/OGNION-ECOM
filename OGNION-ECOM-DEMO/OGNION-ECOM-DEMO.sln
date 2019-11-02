@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOM.Poco", "ECOM.Poco\ECOM.Poco.csproj", "{E54577B6-BB66-4E66-BCDC-44CDF1C34EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECOM.Poco", "ECOM.Poco\ECOM.Poco.csproj", "{E54577B6-BB66-4E66-BCDC-44CDF1C34EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOM.Repos", "ECOM.Repos\ECOM.Repos.csproj", "{C906A96E-6207-491D-8B0F-7B94ACB60868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECOM.Repos", "ECOM.Repos\ECOM.Repos.csproj", "{C906A96E-6207-491D-8B0F-7B94ACB60868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOM.Service", "ECOM.Service\ECOM.Service.csproj", "{72579BE3-9E85-456D-B685-56AD01F3D942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECOM.Service", "ECOM.Service\ECOM.Service.csproj", "{72579BE3-9E85-456D-B685-56AD01F3D942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{069892F7-0F71-4214-A320-EF8DE3715816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{069892F7-0F71-4214-A320-EF8DE3715816}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C07FA2D2-672E-46CC-8B17-6FDB340EAEC6}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ECOM.sql", "ECOM.sql\ECOM.sql.sqlproj", "{00B8ED1E-1E16-4883-84BA-F3E44E226A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,18 @@ Global
 		{069892F7-0F71-4214-A320-EF8DE3715816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069892F7-0F71-4214-A320-EF8DE3715816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069892F7-0F71-4214-A320-EF8DE3715816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00B8ED1E-1E16-4883-84BA-F3E44E226A70} = {C07FA2D2-672E-46CC-8B17-6FDB340EAEC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BB23B8E-F03E-4F90-8244-936374E7B70B}

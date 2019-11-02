@@ -1,0 +1,85 @@
+02/11/2019 20:31:34	Ce journal contient des informations sur l'importation du schéma dans le projet 'ECOM.sql' sur l'ordinateur 'DESKTOP-QB4PK8M' par l'utilisateur 'BAM'.
+02/11/2019 20:31:34	L'importation du schéma de base de données a commencé.
+02/11/2019 20:31:44	Collecte des informations d'identification à la base de données
+02/11/2019 20:31:44	Collecte des options de la base de données
+02/11/2019 20:31:44	Collecte de l'option de configuration étendue à la base de données générique
+02/11/2019 20:31:44	Collecte des utilisateurs
+02/11/2019 20:31:44	Collecte des rôles
+02/11/2019 20:31:44	Collecte des rôles d'application
+02/11/2019 20:31:44	Collecte des appartenances aux rôles
+02/11/2019 20:31:44	Collecte des groupes de fichiers
+02/11/2019 20:31:44	Collecte des catalogues de recherche en texte intégral
+02/11/2019 20:31:44	Collecte des assemblys
+02/11/2019 20:31:44	Collecte des certificats
+02/11/2019 20:31:44	Collecte des clés asymétriques
+02/11/2019 20:31:44	Collecte des clés symétriques
+02/11/2019 20:31:44	Collecte des clés symétriques chiffrées
+02/11/2019 20:31:44	Collecte des schémas
+02/11/2019 20:31:44	Collecte des collections de schémas XML
+02/11/2019 20:31:44	Collecte des types de données définis par l'utilisateur
+02/11/2019 20:31:44	Collecte des types définis par l'utilisateur
+02/11/2019 20:31:44	Collecte des types de tables
+02/11/2019 20:31:44	Collecte des clés uniques des types de tables
+02/11/2019 20:31:44	Collecte des clés primaires pour les types de tables
+02/11/2019 20:31:44	Collecte d'index pour types de tables
+02/11/2019 20:31:44	Collecte des contraintes de validation pour les types de tables
+02/11/2019 20:31:44	Collecte des contraintes par défaut pour les types de tables
+02/11/2019 20:31:45	Collecte des fonctions de partition
+02/11/2019 20:31:45	Collecte des schémas de partition
+02/11/2019 20:31:45	Collecte des fonctions
+02/11/2019 20:31:45	Collecte de fonctions cryptées
+02/11/2019 20:31:45	Collecte des agrégats
+02/11/2019 20:31:45	Collecte des procédures
+02/11/2019 20:31:46	Collecte de procédures cryptées
+02/11/2019 20:31:46	Collecte des tables
+02/11/2019 20:31:46	Collecte des clés primaires
+02/11/2019 20:31:46	Collecte des contraintes uniques
+02/11/2019 20:31:46	Collecte des clés étrangères
+02/11/2019 20:31:46	Collecte des contraintes par défaut
+02/11/2019 20:31:46	Collecte des contraintes de validation
+02/11/2019 20:31:46	Collecte des vues
+02/11/2019 20:31:46	Collecte de vues cryptées
+02/11/2019 20:31:46	Collecte des index
+02/11/2019 20:31:46	Collecte des statistiques
+02/11/2019 20:31:46	Collecte des listes de mots vides d'index de recherche en texte intégral
+02/11/2019 20:31:46	Collecte des listes de propriétés de recherche
+02/11/2019 20:31:46	Collecte des propriétés de recherche
+02/11/2019 20:31:46	Collecte des index de recherche en texte intégral
+02/11/2019 20:31:46	Collecte des index de la banque de colonnes
+02/11/2019 20:31:46	Collecte des index spatiaux
+02/11/2019 20:31:46	Collecte des index XML
+02/11/2019 20:31:46	Collecte d'index XML sélectifs
+02/11/2019 20:31:46	Collecte de déclencheurs cryptés
+02/11/2019 20:31:46	Collecte des déclencheurs
+02/11/2019 20:31:46	Collecte des déclencheurs chiffrés et DDL CLR
+02/11/2019 20:31:46	Collecte des DDL triggers
+02/11/2019 20:31:46	Collecte des synonymes
+02/11/2019 20:31:46	Collecte des valeurs par défaut
+02/11/2019 20:31:46	Collecte des liaisons UDDT de contrainte de données
+02/11/2019 20:31:46	Collecte des règles
+02/11/2019 20:31:46	Collecte des liaisons UDDT de contrainte de données
+02/11/2019 20:31:46	Collecte des types de messages
+02/11/2019 20:31:46	Collecte des files d'attente
+02/11/2019 20:31:46	Collecte des contrats
+02/11/2019 20:31:46	Collecte des services
+02/11/2019 20:31:46	Collecte des notifications d'événements
+02/11/2019 20:31:46	Collecte des liaisons de service distant
+02/11/2019 20:31:46	Collecte des priorités de Service Broker
+02/11/2019 20:31:46	Collecte des signatures
+02/11/2019 20:31:46	Collection des options de compression de données
+02/11/2019 20:31:46	Collecte des types de séquences
+02/11/2019 20:31:46	Collecte des stratégies de sécurité
+02/11/2019 20:31:46	Collecter les clés de chiffrement de colonne
+02/11/2019 20:31:46	Collecte des clés principales de colonne
+02/11/2019 20:31:46	Collecte des sources de données externes
+02/11/2019 20:31:46	Collecte des formats de fichier externes
+02/11/2019 20:31:46	Collecte des tables externes
+02/11/2019 20:31:46	Collection des propriétés étendues
+02/11/2019 20:31:46	Collecte des informations d'identification
+02/11/2019 20:31:46	Collecte des connexions
+02/11/2019 20:31:46	Collecte des audits du serveur
+02/11/2019 20:31:48	Analyse du projet à la recherche des éléments en double
+02/11/2019 20:31:48	Fin du traitement des éléments en double
+02/11/2019 20:31:49	Importation de la base de données terminée.
+02/11/2019 20:31:49	Un résumé de l'opération d'importation a été enregistré à l'emplacement suivant : C:\Users\BAM\Source\Repos\OGNION-ECOM\OGNION-ECOM-DEMO\ECOM.sql\Importer les journaux de schémas\ECOM.sql_20191102073134.log.
+02/11/2019 20:31:49	Cliquez sur Terminer pour continuer...

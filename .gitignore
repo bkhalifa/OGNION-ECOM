@@ -17,3 +17,5 @@
 /OGNION-ECOM-DEMO/ECOM.Repos/bin/Debug/netcoreapp2.2
 /.vs
 /OGNION-ECOM-DEMO/.vs/OGNION-ECOM-DEMO/DesignTimeBuild
+/OGNION-ECOM-DEMO/ECOM.sql/bin/Debug
+/OGNION-ECOM-DEMO/ECOM.sql/obj/Debug
