@@ -19,3 +19,5 @@
 /OGNION-ECOM-DEMO/.vs/OGNION-ECOM-DEMO/DesignTimeBuild
 /OGNION-ECOM-DEMO/ECOM.sql/bin/Debug
 /OGNION-ECOM-DEMO/ECOM.sql/obj/Debug
+/OGNION-ECOM-DEMO/Api/bin/Release/netcoreapp2.2
+/OGNION-ECOM-DEMO/Api/Properties/PublishProfiles
