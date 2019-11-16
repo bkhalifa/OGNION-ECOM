@@ -25,6 +25,19 @@ namespace Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+         
+            services.AddCors(o =>
+            {
+                o.AddPolicy("ecom", builder =>
+                {
+                    builder
+                          
+                          .WithOrigins("http://localhost:3002/")
+                          .AllowAnyOrigin()
+                           .WithMethods("GET", "POST")
+                          .AllowAnyHeader();
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<COMMERCEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
