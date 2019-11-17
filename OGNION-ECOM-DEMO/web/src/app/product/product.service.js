@@ -17,11 +17,9 @@ var ProductService = (function () {
         this._http = _http;
     }
     ProductService.prototype.GetProduct = function () {
-        var headers = new http_1.Headers();
-        headers.append('Access-Control-Allow-Origin', '*');
         return this._http.get('http://localhost:8081/api/product')
             .do(function (x) { return console.log(x); })
-            .map(function (hikes) { return hikes.json(); });
+            .map(function (products) { return products.json(); });
     };
     return ProductService;
 }());

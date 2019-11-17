@@ -23,3 +23,6 @@
 /OGNION-ECOM-DEMO/Api/Properties/PublishProfiles
 /OGNION-ECOM-DEMO/ECOM.Poco/ECOM.Poco.csproj.user
 /OGNION-ECOM-DEMO/ECOM.sql
+/OGNION-ECOM-DEMO/ECOM.Poco/bin/Release/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Repos/bin/Release/netcoreapp2.2
+/OGNION-ECOM-DEMO/ECOM.Service/bin/Release/netcoreapp2.2

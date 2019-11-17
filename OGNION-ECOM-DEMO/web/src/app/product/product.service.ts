@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Http, Headers } from '@angular/http';
-
+import { Http } from "@angular/http";
 
 import { Product } from './product';
 
@@ -15,11 +14,10 @@ export class ProductService {
   }
 
   GetProduct() {
-    const headers = new Headers();
+
   
-    headers.append('Access-Control-Allow-Origin', '*');
     return this._http.get('http://localhost:8081/api/product')
       .do(x => console.log(x))
-      .map(hikes => hikes.json())
+      .map(products => products.json())
   }
 }

@@ -5,8 +5,9 @@ import { ProductService } from './product/product.service';
 
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: `app.component.html`,
 })
 export class AppComponent  {
   constructor(private _prodcutSerivve: ProductService) {}
@@ -19,7 +20,8 @@ export class AppComponent  {
       .subscribe(
         res => this.products = res,
         err => console.log(err.status)
-      );
+    );
+
     console.log(this.products);
   }
 }
