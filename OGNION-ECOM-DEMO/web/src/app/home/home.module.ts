@@ -9,4 +9,5 @@ import { HomeComponent } from "./home.component";
   declarations: [HomeComponent],
   exports:[]
 })
+
 export class HomeModule {}

@@ -34,7 +34,7 @@ namespace ECOM.Service
 
         public void InsertProduct(Products product)
         {
-            throw new NotImplementedException();
+            _productRepository.Insert(product);
         }
 
         public void UpdateProduct(Products product)
