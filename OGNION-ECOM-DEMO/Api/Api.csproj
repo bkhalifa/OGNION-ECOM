@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ECOM.Repos\ECOM.Repos.csproj" />
-    <ProjectReference Include="..\ECOM.Service\ECOM.Service.csproj" />
   </ItemGroup>
 
 </Project>

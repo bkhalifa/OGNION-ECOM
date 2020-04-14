@@ -1,7 +1,5 @@
-﻿using ECOM.Repos;
-using ECOM.Repos.DBInteractions;
-using ECOM.Service;
-using ECOM.Service.IService;
+﻿
+using ECOM.Repos.DB;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +12,7 @@ namespace Api
 {
     public class Startup
     {
-        public const string version = "v1";
+        public const string version = "v2";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -38,8 +36,8 @@ namespace Api
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<COMMERCEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddTransient<IProductService, ProductService>();
+            //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            //services.AddTransient<IProductService, ProductService>();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc(version, new Info { Title = "Ecommerce - API", Version = version });
             });

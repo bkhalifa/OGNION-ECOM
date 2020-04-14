@@ -5,9 +5,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using Api.Model;
 using BrunoZell.ModelBinding;
-using ECOM.Poco;
-using ECOM.Repos.DBInteractions;
-using ECOM.Service.IService;
+using ECOM.Repos.DB;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,12 +17,7 @@ namespace Api.Controllers
 
     public class ProductController : ControllerBase
     {
-        private readonly IProductService _productService;
-
-        public ProductController(IProductService productService)
-        {
-            _productService = productService;
-        }
+       
 
 
 
@@ -32,23 +25,22 @@ namespace Api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<ProductModel>> Get()
         {
-            List<ProductModel> model = new List<ProductModel>();
+            using (var _ctx = new COMMERCEContext())
+            {
+                var products = _ctx.Products.Select(
+                    p => new ProductModel
+                    {
+                        CategoryId = p.CategoryId,
+                        ProductId = p.ProductId,
+                        Description = p.Description,
+                        ModelName = p.ModelName,
+                        ModelNumber = p.ModelNumber,
+                        ProductImage = p.ProductImage,
+                        UnitCost = p.UnitCost
+                    }).ToList();
 
-            _productService.GeProducts().ToList().ForEach(_ =>
-           {
-               ProductModel product = new ProductModel
-               {
-                   ProductId = _.ProductId,
-                   Description = _.Description,
-                   ModelName = _.ModelName,
-                   ProductImage = _.ProductImage,
-                   ModelNumber = _.ModelNumber,
-                   UnitCost = _.UnitCost,
-                   CategoryId = _.CategoryId
-               };
-               model.Add(product);
-           });
-            return model;
+                return products;
+            }
         }
 
 
@@ -129,7 +121,7 @@ namespace Api.Controllers
 
                 for (int i = 0; i < files.Count(); i++)
                 {
-                     fileName = ContentDispositionHeaderValue.Parse(files[i].ContentDisposition).FileName.Trim('"');
+                    fileName = ContentDispositionHeaderValue.Parse(files[i].ContentDisposition).FileName.Trim('"');
                     var fullPath = Path.Combine(pathToSave, fileName);
                     var dbPath = Path.Combine(folderName, fileName);
 
@@ -149,15 +141,40 @@ namespace Api.Controllers
                 pr.ModelNumber = Model.ModelNumber;
                 pr.ProductImage = fileName;
                 pr.Description = Model.Description;
+                using (var _context = new COMMERCEContext())
+                {
+                    _context.Products.Add(pr);
+                    _context.SaveChanges();
+                }
 
-                _productService.InsertProduct(pr);
-
+                   
                 return Ok(pr.ProductId);
             }
             return Ok("");
         }
 
 
+        [HttpDelete]
+        [Route("deleteproduct")]
+        public IActionResult DeleteProduct(int prodcutId)
+        {
+            if(prodcutId > 0)
+            {
+                using (var _ctx = new COMMERCEContext())
+                {
+                    var product = _ctx.Products.Where(p => p.ProductId == prodcutId).FirstOrDefault();
+
+                    if(product != null)
+                    {
+                        _ctx.Products.Remove(product);
+                        _ctx.SaveChanges();
+
+                    }
+                }
+                
+            }
+            return Ok("");
+        }
 
     }
 }
