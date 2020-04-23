@@ -130,8 +130,6 @@ namespace Api.Controllers
                         files[i].CopyTo(stream);
                     }
                 }
-
-
             }
             var pr = new Products();
             if (Model != null)

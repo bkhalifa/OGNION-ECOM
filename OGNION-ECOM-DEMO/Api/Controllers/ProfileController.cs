@@ -119,5 +119,34 @@ namespace Api.Controllers
             return Ok(false);
         }
 
+        [HttpPost]
+        [Route("updatprofile")]
+        public ActionResult UpdateProfile([FromBody] UpdateProfileModel model)
+        {
+            if(model != null)
+            {
+                using (var ctx = new COMMERCEContext())
+                {
+                    var foundUser = ctx.CustumerUser
+                                       .Where(_ => _.CustumerId == model.Id)
+                                       .FirstOrDefault();
+                    if (foundUser == null)
+                        return Ok(-1);
+
+                    foundUser.CustumerId = model.Id;
+                    foundUser.Customerlogin = model.LoginName;
+                    foundUser.CustumerLastName = model.LastName;
+                    foundUser.CustumerName = model.FirstName;
+                    foundUser.Custumerpassword = model.Password.Equals(string.Empty) ? foundUser.Custumerpassword : model.Password;
+
+                  
+                    ctx.CustumerUser.Update(foundUser);
+                    ctx.SaveChanges();
+                    return Ok(1);
+
+                }
+            }
+            return Ok(-1);
+        }
     }
 }
